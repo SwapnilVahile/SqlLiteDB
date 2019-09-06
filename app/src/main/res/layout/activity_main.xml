@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Rollno:" />
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Enter Rollno:"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Name:" />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Enter Name:"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Marks:" />
+        <EditText
+            android:id="@+id/editMarks"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Enter Marks:"
+            android:inputType="number" />
+    </GridLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/btnModify"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:text="Modify" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/btnViewAll"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:text="View All" />
+
+            <Button
+                android:id="@+id/btnShow"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:text="Show" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
